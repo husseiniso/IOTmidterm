@@ -1,0 +1,9 @@
+{
+  "name": "Quilt_SMS_Server",
+  "version": "0.0.1",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "express": "^4.10.1",
+    "socket.io": "^1.2.1"
+  }
+}

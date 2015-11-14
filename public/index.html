@@ -1,0 +1,98 @@
+       
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshrab</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="./js/vendor/modernizr.js"></script>
+    <script src="./js/vendor/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script language="javascript" type="text/javascript" src="./js/p5.js"></script>
+    <script src="./js/main.js"></script>
+
+  </head>
+  <body>
+        <div class="row">
+        <div class="large-12 columns" style=" font-size:60px;">
+          <div class="panel" style="line-height:50px;">
+              This is the Monitoring Dashboard of <span style="color:#EA2E49;" > Eshrab</span> in New York!
+            </div>
+        </div>
+      </div>
+    
+      <div class="row">
+        
+        <div class="large-6 columns">
+        
+            <div class="mode_code">
+               Humidity
+            </div>
+            <div  id="holder" class="humidity_bar">
+                  <canvas id="mycanvas" class="" style="z-index=9999;"></canvas>
+          </div>
+        </div>
+        <div class="large-4 columns">
+        
+          <div class="mode_code">
+           Light
+          </div>
+          <div  class="light_bar">
+            <span id="light" style="font-size:120px; text-align=center;">----</span>
+          </div>
+        </div>
+        <div class="large-2 columns">
+        
+          <div class="mode_code">
+           Temprature
+          </div>
+          <div  class="temprature_bar">
+            <span id="temperature" style="font-size:120px; text-align=center;">----</span>
+
+          </div>
+        </div>
+      </div>
+    
+    
+          <div class="row">
+        
+
+        <div class="large-4 columns">
+          <div id="systemState" class="mode_code" style="height:150px; margin-top:20px; ">
+           System is Truned Off!
+          </div>
+          
+            
+        </div>
+        <div class="large-2 columns">
+             <button id="gate" style="height:150px; margin-top:20px; width:150px; display:none;">Open Gate</button>
+            
+        </div>
+         <div class="large-2 columns">
+             <button id="start" style="height:150px; margin-top:20px; width:150px; ">Turn On</button>
+            
+        </div>
+        
+        <div class="large-6 columns">
+        
+            
+        </div>
+        
+      </div>
+    <div class="row" style="height:15px;">
+
+    </div>
+      
+      
+    
+      
+    
+    <script src="./js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
+
